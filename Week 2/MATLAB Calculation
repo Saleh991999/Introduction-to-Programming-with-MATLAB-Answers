@@ -1,0 +1,4 @@
+our_borrowed_money=1000;
+interest_rate=0.1;
+debt_first_year=our_borrowed_money+our_borrowed_money* interest_rate;
+debt=debt_first_year+debt_first_year*interest_rate
