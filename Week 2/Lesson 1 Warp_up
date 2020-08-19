@@ -1,0 +1,8 @@
+Usainbolt_distance_meter=100;
+Usainbolt_time_sec=9.58;
+usainbolt_speed_mps=Usainbolt_distance_meter/Usainbolt_time_sec;
+hundred=usainbolt_speed_mps/1000;
+hundred=(usainbolt_speed_mps/1000)*60*60
+kenyan_distance_km=42.195;
+kenyan_time_hr=2+(1/60)+(39/60)/60;
+marathon= kenyan_distance_km/ kenyan_time_hr
