@@ -1,0 +1,10 @@
+function k=next_prime(n)
+while (isprime(n)||~isprime(n))
+    n=n+1;
+    if(isprime(n))
+        k=n;
+        return;
+    end
+end
+
+end
