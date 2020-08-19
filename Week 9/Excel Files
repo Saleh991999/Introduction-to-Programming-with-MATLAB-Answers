@@ -1,0 +1,26 @@
+function result=get_distance(ct1,ct2)
+ [~,~,x] = xlsread('Distances.xlsx');
+sizr=size(x,1);sizc=size(x,2);
+for i=1:sizr
+    if(ct1==string(x{1,i}))
+        nr=i;
+        break;
+    elseif (ct1~=string(x{1,i}))
+        nr=-1;
+    end
+end
+for t=1:sizc
+    if (ct2==string(x{t,1}))
+        nc=t;
+        break;
+    elseif (ct1~=string(x{1,t}))
+        nc=-1;
+    end
+end
+if (nr==-1 || nc==-1)
+    result=-1;
+end
+if (nr~=-1 && nc~=-1)
+    result=x{nc,nr};
+end
+end
