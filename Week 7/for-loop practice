@@ -1,3 +1,0 @@
-function numfreeze=freezing(A)
-numfreeze=length(A(A<32));
-end
