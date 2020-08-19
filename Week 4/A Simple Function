@@ -1,0 +1,3 @@
+function Area=tri_area(b,h)
+Area=(0.5*b)*h;
+end
