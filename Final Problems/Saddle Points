@@ -1,0 +1,22 @@
+function [indices,j] = saddle(M)
+indices=[];
+[m,n]=size(M);
+f=0;
+for ii=1:m
+    for jj=1:n
+        a=M(ii,jj);
+        x=max(M(ii,:));
+        y=min(M(:,jj));
+        
+        if (a>=x && a<=y)
+            f=f+1;
+            indices(f,:)=[ii,jj];            
+        end
+    end
+end
+if isempty(indices)
+    indices=[];
+else
+    indices=indices(1:f,:);
+end
+end
